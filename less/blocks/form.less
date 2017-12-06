@@ -4,6 +4,10 @@
   border-radius: 2px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+  
+  &--contacts {
+    width: 573px;
+  }
 }
 
 .form__title {
@@ -11,8 +15,15 @@
   margin-bottom: 16px;
   font-size: 20px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  
+  &--contacts {
+    margin-bottom: 45px;
+    font-size: 31px;
+    line-height: 46px;
+  }
 }
 
 .form__input {
@@ -24,6 +35,13 @@
   
   &::placeholder {
     opacity: 0.6;
+  }
+  
+  &--contacts {
+    margin-bottom: 50px;
+    font-size: 23px;
+    line-height: 38px;
+    border-width: 3px;
   }
 }
 
@@ -44,5 +62,11 @@
   &:hover,
   &:active {
     opacity: 0.9;
+  }
+  
+  &--contacts {
+    font-size: 28px;
+    width: 365px;
+    min-height: 84px;
   }
 }

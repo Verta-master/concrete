@@ -1,0 +1,44 @@
+.how {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  .gradient();
+  color: #fff;
+}
+
+.how__list {
+  margin-top: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.how__item {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  
+  p {
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 44px;
+    height: 33px;
+    background-image: url(../img/icon-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:last-child::after {
+    display: none;
+  }
+}
