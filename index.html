@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="header">
-    <nav class="menu">
+    <nav class="menu menu--closed">
       <button type="button" class="menu__btn"></button>
       <ul class="menu__list">
         <li class="menu__item">
@@ -386,6 +386,7 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
+  
   <!-- Slider -->
   <script>
     var swiper = new Swiper('.swiper-container', {
@@ -395,6 +396,18 @@
       pagination: '.swiper-pagination',
       paginationClickable: true,
       spaceBetween: 40
+    });
+  </script>
+  
+  <!-- Scroll to anchor -->
+  <script>
+    $(document).ready(function(){
+      $(".menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+      });
     });
   </script>
 </body>
