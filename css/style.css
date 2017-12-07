@@ -2726,3 +2726,8 @@ button.swiper-pagination-bullet {
         justify-content: center;
   }
 }
+@media (max-width: 767px) and (orientation: landscape){
+  .header{
+    position: absolute;
+  }
+}
